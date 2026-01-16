@@ -12,7 +12,7 @@ export const Login = () => {
 
 
   useEffect(() => {
-    const token = localStorage.getItem("access_token");
+    const token = localStorage.getItem("acess_token");
     if (token) {
       navigate("/dashboard");
     }
@@ -34,7 +34,7 @@ export const Login = () => {
 
       const data = await res.json();
 
-      localStorage.setItem("access_token", data.access_token);
+      localStorage.setItem("acess_token", data.acess_token);
 
       navigate("/dashboard");
     } catch (err) {

@@ -6,6 +6,6 @@ interface PrivateRouteProps {
 }
 
 export const PrivateRoute: React.FC<PrivateRouteProps> = ({ children }) => {
-  const token = localStorage.getItem("access_token");
+  const token = localStorage.getItem("acess_token");
   return token ? children : <Navigate to="/" replace />;
 };
