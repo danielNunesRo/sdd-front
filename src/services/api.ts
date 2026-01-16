@@ -10,7 +10,7 @@ export const feedbackService = {
       ? '/feedbacks/admin' 
       : '/feedbacks';
     
-    const response = await fetch(`${}${endpoint}`, {
+    const response = await fetch(`${BASE_URL}${endpoint}`, {
       headers: { 'Authorization': `Bearer ${token}` }
     });
     return response.json();
